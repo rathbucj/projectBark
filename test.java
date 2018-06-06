@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mainApplicationFolder;
+package projectBark;
+
+import javafx.scene.control.Button;
 
 /**
  *
  * @author moeyaziji
  */
 public class test {
-    
+    Button on = new Button();
 }
