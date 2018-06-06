@@ -1,0 +1,32 @@
+
+package mainApplicationFolder;
+
+import java.sql.Time;
+
+
+public class ClockIns {
+    
+    public int clock_ID;
+    public Time clockIn;
+    public Time clockOut;
+    public int vID;
+    public int count = 1;
+    
+    double totalHours;
+    
+    public ClockIns(Time clockIn, Time clockOut, int vID)
+    {
+        this.clock_ID = count;
+        this.clockIn = clockIn;
+        this.clockOut = clockOut;
+        this.vID = vID;
+        
+        count++;
+    }
+    
+    public double totalHours()
+    {
+        totalHours = ((this.clockIn).getTime() - (this.clockOut).getTime());
+        return totalHours;
+    }
+}
